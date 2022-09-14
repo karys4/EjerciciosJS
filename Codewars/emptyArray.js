@@ -8,7 +8,10 @@ Given a non-empty array of integers, return the result of multiplying the values
 */
 
 function grow(x) {
-  return x.reduce((a, b) => a * b, 1);
+  return x.reduce(
+    (previousValue, currentValue) => previousValue * currentValue,
+    1
+  );
 }
 
 grow([1, 2, 3]); //6
